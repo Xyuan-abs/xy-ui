@@ -1,6 +1,6 @@
 {
   "name": "@xy-ui/xy-form",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "XY Form Components",
   "main": "dist/xy-form.cjs.js",
   "module": "dist/xy-form.es.js",
