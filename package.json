@@ -1,6 +1,6 @@
 {
   "name": "xy-ui-library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "dev": "pnpm --filter xy-form dev",
     "build": "pnpm --filter xy-form build",
