@@ -1,13 +1,8 @@
 {
-  "name": "xy-ui-library",
-  "version": "1.0.1",
-  "scripts": {
-    "dev": "pnpm --filter xy-form dev",
-    "build": "pnpm --filter xy-form build",
-    "test": "pnpm --filter xy-form test"
-  },
+  "name": "xy-ui",
+  "version": "1.0.2",
   "workspaces": [
-    "xy-form"
+    "packages/*"
   ],
   "dependencies": {
     "vue": "^3.2.0",
