@@ -13,10 +13,7 @@ export default function () {
       [ELEMENT.NUMBER_WITH_UNIT]: 1,
     }
 
-    if (
-      hindRequiredMessageMap[formItem.element] &&
-      (formItem.required || formItem.rules?.some((d) => d.required))
-    ) {
+    if (hindRequiredMessageMap[formItem.element] && (formItem.required || formItem.rules?.some((d) => d.required))) {
       rules = [{ required: true, message: '', trigger: 'change' }]
     } else if (rules) {
       const requiredRule = rules.find((d) => d.required)
@@ -36,7 +33,6 @@ export default function () {
             ELEMENT.RATE,
             ELEMENT.SWITCH,
             ELEMENT.ICON_SELECT,
-            ELEMENT.CITY,
           ],
           [ELEMENT.FILE_LIST, ELEMENT.SINGLE_IMG_UPLOAD],
         ]
@@ -46,9 +42,7 @@ export default function () {
           1: `请选择${formItem.label}`,
           2: `请上传${formItem.label}`,
         }
-        const elementType = elementTypeMap.findIndex((types) =>
-          types.some((d) => d === formItem.element),
-        )
+        const elementType = elementTypeMap.findIndex((types) => types.some((d) => d === formItem.element))
 
         const message = messageMap[elementType]
         requiredRule.message = message

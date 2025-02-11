@@ -1,17 +1,32 @@
 {
   "name": "@xy-ui/xy-form",
   "version": "1.0.1",
-  "description": "",
-  "main": "src/index.js",
-  "scripts": {},
+  "description": "XY Form Components",
+  "main": "dist/xy-form.cjs.js",
+  "module": "dist/xy-form.es.js",
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@vueuse/core": "^12.5.0",
+    "lodash": "^4.17.21",
+    "mitt": "^3.0.1"
+  },
   "peerDependencies": {
-    "vue": "^3.0.0",
-    "element-plus": "^2.0.0"
+    "element-plus": "^2.0.0",
+    "vue": "^3.2.0"
   },
   "devDependencies": {
-    "vite": "^3.0.0"
+    "@vitejs/plugin-vue": "^5.2.1",
+    "sass-embedded": "^1.83.4",
+    "vite": "^5.0.0"
   },
-  "keywords": [],
+  "keywords": [
+    "form",
+    "vue",
+    "component"
+  ],
   "author": "",
   "license": "ISC"
 }

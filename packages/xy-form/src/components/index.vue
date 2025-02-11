@@ -9,7 +9,6 @@ import XyCheckbox from './checkbox/index.vue'
 import XyRadio from './radio/index.vue'
 import XyCascader from './cascader/index.vue'
 import XyTreeSelect from './tree-select/index.vue'
-import XyCity from './city/index.vue'
 import XyFileList from './file-list/index.vue'
 import XySingleImgUpload from './single-img-upload/index.vue'
 import XyInputNumberWithUnit from './input-number-with-unit/index.vue'
@@ -294,14 +293,6 @@ defineExpose({
           <!-- switch -->
           <el-switch
             v-else-if="formItem.element === ELEMENT.SWITCH"
-            v-model="formItem.value"
-            v-bind="formItem.attrs"
-            v-on="overwriteEvents(formItem, index)"
-          />
-
-          <!-- city -->
-          <xy-city
-            v-else-if="formItem.element === ELEMENT.CITY"
             v-model="formItem.value"
             v-bind="formItem.attrs"
             v-on="overwriteEvents(formItem, index)"
